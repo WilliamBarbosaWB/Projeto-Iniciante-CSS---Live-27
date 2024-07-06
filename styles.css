@@ -1,0 +1,97 @@
+/* Configuração Global Inicial de todo site */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    color: #515151;
+    
+}
+
+/* Configuração da caixa que está compreendendo todo o conteudo do body*/
+div {
+    height: 100vh; /* Configuração para ocupar toda a altura da tela */
+    width: 100vw; /* Configuração para ocupar toda a largura da tela */
+    display: flex;
+    align-items: center; /* Alinhamento do conteudo na vertical */
+    justify-content: center; /* Alinhamento do conteudo na horizontal */
+
+}
+
+section {
+    margin-left: 100px; /* Dar um espaçamento no lado esquerdo  */
+}
+
+h1 {
+    font-size: 100px; 
+    font-weight: 900;
+
+}
+
+h2 {
+    font-size: 58px;
+    font-weight: 500;
+    line-height: 70.7px;
+}
+
+p {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.26px;
+    color: #848484;
+    width: 500px;
+    margin-top: 30px; /* adicionado um espaçamento na parte de cima do paragrafo */
+}
+
+button {
+    background-color: #ADFF00;
+    width: 239px;
+    height: 64px;
+    border-radius: 30px;
+    color:#000000;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    box-shadow: 0px 4px 4px rgba(67, 67, 67, 0.349);
+    border: none;
+    margin-top: 40px;
+
+}
+
+img {
+    height: 500px;
+    width: 500px;
+}
+
+/* Trabalhar a responsividade do site através do media query */
+
+@media (max-width: 1000px){ /* Até no máximo definido ele deve aplicar o que estiver abaixo do media */
+
+    img {
+        height: 300px;
+        width: 300px;
+    }
+
+    div {
+        flex-direction: column;
+    }
+    
+    h1 {
+        font-size: 50px;
+        text-transform: uppercase;
+    }
+
+    h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    p {
+        display: none; /* Comando para ocultar o parágrafo */
+    }
+
+    section {
+        margin: 0;
+    }
+}
